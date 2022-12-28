@@ -402,20 +402,17 @@
     <script src="./assets/js/script.js"></script>
     <script>
         $("#contact-form").submit((e) => {
-            console.log("gdfd",e)
             e.preventDefault()
             $.ajax({
                 url: "https://script.google.com/macros/s/AKfycbwWRonTS6uhd8DwPYXjLRjZNjVFbsLbtZf3JGBy6kumwxDFWnsYS0ovZ7hai2wLGIol/exec",
                 data: $("#contact-form").serialize(),
                 method: "post",
                 success: function (response) {
-                    console.log(response)
                     alert("Form submitted successfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
                 error: function (err) {
-                    console.log("error ",err)
                     alert("Something Error")
 
                 }
