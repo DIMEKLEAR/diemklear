@@ -201,26 +201,26 @@
                             <form target="_self " id="contact-form" class="default-form">
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" name="username" placeholder="Your Name" required="">
+                                        <input type="text" name="name" placeholder="Your Name" required="Provide name">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="email" name="email" placeholder="Email Address" required="">
+                                        <input type="email" name="email" placeholder="Email Address" required="Provide email id">
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                                        <input type="text" name="phone" required="" placeholder="Phone Number">
+                                        <input type="text" name="phone" required="Provide Number" placeholder="Phone Number">
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 form-group">
                                         <i class="widget-title"></i>
                                         <h4> SELECT PRODUCT</h4>
-                                        <input type="radio" id="Dime Klear Household Water Filter" name="fav_language"
+                                        <input type="radio" id="Dime Klear Household Water Filter" name="products"
                                             value="Dime Klear Household Water Filter">
                                         <label for="html">Dime Klear Household Water Filter</label><br>
-                                        <input type="radio" id="Dime Klear Filter Water Bottle" name="fav_language"
+                                        <input type="radio" id="Dime Klear Filter Water Bottle" name="Products"
                                             value="Dime Klear Filter Water Bottle">
                                         <label for="css">Dime Klear Filter Water Bottle</label><br>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                        <textarea name="message" placeholder="Address"></textarea>
+                                        <textarea name="address" placeholder="Address"></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                                         <button class="theme-btn btn-one" type="submit" name="submit-form">Submit
@@ -402,10 +402,10 @@
     <script src="./assets/js/script.js"></script>
     <script>
         $("#contact-form").submit((e) => {
-            console.log(e)
+            console.log("gdfd",e)
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbwNPZ75GldJfVahPpgeHV4UUnv4oKs600Kv08JroK2Vgs7ld6N_NDhgWauXDEutzT5rjA/exec",
+                url: "https://script.google.com/macros/s/AKfycbwWRonTS6uhd8DwPYXjLRjZNjVFbsLbtZf3JGBy6kumwxDFWnsYS0ovZ7hai2wLGIol/exec",
                 data: $("#contact-form").serialize(),
                 method: "post",
                 success: function (response) {
