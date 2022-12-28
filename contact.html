@@ -163,8 +163,6 @@
         </section>
         <!-- End Page Title -->
 
-
-<<<<<<< HEAD
         <!-- contact-style-two -->
         <section class="contact-style-two">
             <div class="auto-container">
@@ -213,12 +211,26 @@
                                     <div class="col-lg-6 col-md-12 col-sm-12 form-group">
                                         <i class="widget-title"></i>
                                         <h4> SELECT PRODUCT</h4>
-                                        <input type="radio" id="Dime Klear Household Water Filter" name="products"
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="products"
+                                                value="Dime Klear Household Water Filter" id="product1">
+                                            <label class="form-check-label" for="product1">
+                                                Dime Klear Household Water Filter
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="products"
+                                                value="Dime Klear Filter Water Bottle" id="product2">
+                                            <label class="form-check-label" for="product2">
+                                                Dime Klear Filter Water Bottle
+                                            </label>
+                                        </div>
+                                        <!-- <input type="radio" id="Dime Klear Household Water Filter" name="products"
                                             value="Dime Klear Household Water Filter">
                                         <label for="html">Dime Klear Household Water Filter</label><br>
                                         <input type="radio" id="Dime Klear Filter Water Bottle" name="Products"
                                             value="Dime Klear Filter Water Bottle">
-                                        <label for="css">Dime Klear Filter Water Bottle</label><br>
+                                        <label for="css">Dime Klear Filter Water Bottle</label><br> -->
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <textarea name="address" placeholder="Address"></textarea>
@@ -416,7 +428,6 @@
                 },
                 error: function (err) {
                     alert("Something Error")
-
                 }
             })
         })
