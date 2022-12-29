@@ -29,6 +29,8 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet">
     <link href="assets/css/color.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/utility.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
 </head>
@@ -163,58 +165,101 @@
         </section>
         <!-- End Page Title -->
 
+
+      
+
         <!-- contact-style-two -->
         <section class="contact-style-two">
             <div class="auto-container">
+
+        
+
+
+
                 <div class="col-lg-12 col-md-12 col-sm-12 form-column">
                     <div class="form-inner">
                         <!-- <h3>Leave a Comment</h3> -->
-                        <form  id="submit-form" class="default-form">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input  type="text" name="name" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input  type="email" name="email" placeholder="Email Address"
-                                        required>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                                    <input  type="text" name="phone" value="" 
-                                        placeholder="Phone Number" required>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                                    <i class="widget-title"></i>
-                                    <h4> SELECT PRODUCT</h4>
-<!--                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="products"
-                                            value="Dime Klear Household Water Filter" id="product1">
-                                        <label class="form-check-label" for="product1">
-                                            Dime Klear Household Water Filter
-                                        </label>
-                                    </div> -->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="products"
-                                            value="Dime Klear Filter Water Bottle" id="product2" required>
-                                        <label class="form-check-label" for="product2">
-                                            Dime Klear Filter Water Bottle
-                                        </label>
-                                    </div>
-                                    <!-- <input type="radio" id="Dime Klear Household Water Filter" name="products"
-                                            value="Dime Klear Household Water Filter">
-                                        <label for="html">Dime Klear Household Water Filter</label><br>
-                                        <input type="radio" id="Dime Klear Filter Water Bottle" name="Products"
-                                            value="Dime Klear Filter Water Bottle">
-                                        <label for="css">Dime Klear Filter Water Bottle</label><br> -->
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <textarea  name="address" placeholder="Address" required></textarea>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                    <button class="theme-btn btn-one" type="submit" name="submit-form">Submit
-                                        Now</button>
-                                </div>
+                    
+                        <div class="container-contact100">
+                            <div class="wrap-contact100">
+                            <form id="submit-form" class="contact100-form validate-form">
+                            <span class="contact100-form-title">
+                            Send Us A Message
+                            </span>
+        
+                            <label class="label-input100" for="first-name">Tell us your name *</label>
+                            <div class="wrap-input100 validate-input">
+                            <input id="email" class="input100" type="text" name="name" placeholder="Your Name" required>
+                            <span class="focus-input100"></span>
                             </div>
-                        </form>
+                            
+                            <label class="label-input100" for="email">Enter your email *</label>
+                            <div class="wrap-input100 validate-input">
+                            <input id="email" class="input100" type="email" name="email" placeholder="Your Email" required>
+                            <span class="focus-input100"></span>
+                            </div>
+        
+                            <label class="label-input100" for="phone">Enter phone number</label>
+                            <div class="wrap-input100">
+                            <input id="phone" class="input100" type="text" name="phone" placeholder="Your Phone Number" required>
+                            <span class="focus-input100"></span>
+                            </div>
+        
+                            <label class="label-input100" for="address">Address</label>
+                            <div class="wrap-input100 validate-input">
+                            <textarea id="address" class="input100" name="address" placeholder="Enter Your Address" required></textarea>
+                            <span class="focus-input100"></span>
+                            </div>
+        
+        
+                            <label class="label-input100" for="address">Select Products</label>
+                                <div class="form-check mt-4">
+                                    <input class="form-check-input" type="checkbox" name="products"
+                                        value="Dime Klear Filter Water Bottle" id="product2" required>
+                                    <label class="form-check-label" for="product2" >
+                                        Dime Klear Filter Water Bottle
+                                    </label>
+                                </div>
+                                <!-- <input type="radio" id="Dime Klear Household Water Filter" name="products"
+                                        value="Dime Klear Household Water Filter">
+                                    <label for="html">Dime Klear Household Water Filter</label><br>
+                                    <input type="radio" id="Dime Klear Filter Water Bottle" name="Products"
+                                        value="Dime Klear Filter Water Bottle">
+                                    <label for="css">Dime Klear Filter Water Bottle</label><br> -->
+        
+        
+        
+                            <div class="container-contact100-form-btn">
+                            <button class="contact100-form-btn">
+                            Submit Now
+                            </button>
+                            </div>
+                            </form>
+        
+        
+                            <div class="contact100-more flex-col-c-m" style="background-image: url('assets/images/resource/chooseus-1.jpg');">
+        
+        
+                            
+                            <div class="dis-flex size1 p-b-47">
+                            <div class="txt1 p-r-25">
+                            <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                            <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                            Price
+                            </span>
+                            <span class="txt3">
+                            0000/-
+                            </span>
+                            </div>
+                            </div>
+                            
+                            </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
