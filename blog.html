@@ -185,13 +185,13 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12 form-group">
                                     <i class="widget-title"></i>
                                     <h4> SELECT PRODUCT</h4>
-                                    <div class="form-check">
+<!--                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="products"
                                             value="Dime Klear Household Water Filter" id="product1">
                                         <label class="form-check-label" for="product1">
                                             Dime Klear Household Water Filter
                                         </label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="products"
                                             value="Dime Klear Filter Water Bottle" id="product2">
@@ -682,13 +682,17 @@
     <script>
         $("#contact-form").submit((e) => {
             console.log(e);
-            console.log($("#contact-form").serialize())
+            console.log($("#contact-form").serialize());
+            const name = (inputs.elements["name"].value).trim()
+            const email = (inputs.elements["email"].value).trim()
+            const address= (inputs.elements["address"].value.trim())
+            const phone = (inputs.elements["phone"].value).trim()
             e.preventDefault()
-//             var phone=$("#phone");
-//             console.log(phone,"length",phone.length(),$("#phone").text()),
-//             if(1=1)
-//             {
-            $.ajax({
+            if (!name.length > 0 || !email.length > 0 || !address.length > 0 || !phone.length > 0) {
+        alert("All fields are mandatory")
+        return;
+            }else{
+                $.ajax({
                 url: "https://script.google.com/macros/s/AKfycbwWRonTS6uhd8DwPYXjLRjZNjVFbsLbtZf3JGBy6kumwxDFWnsYS0ovZ7hai2wLGIol/exec",
                 data: $("#contact-form").serialize(),
                 method: "post",
@@ -701,10 +705,7 @@
                     alert("Something Error")
                 }
             })
-//             }
-//             else{
-//                 alert("Blocked")
-//             }
+            }
         })
     </script>
 
