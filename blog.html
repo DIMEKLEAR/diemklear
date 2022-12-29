@@ -682,6 +682,7 @@
     <script>
         $("#contact-form").submit((e) => {
             console.log(e);
+            console.log($("#contact-form").serialize())
             e.preventDefault()
 //             var phone=$("#phone");
 //             console.log(phone,"length",phone.length(),$("#phone").text()),
