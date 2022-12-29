@@ -683,8 +683,8 @@
         $("#contact-form").submit((e) => {
             console.log(e);
             e.preventDefault()
-            var phone=$("#phone").val();
-            console.log(phone,"length",phone.length())
+            var phone=$("#phone");
+            console.log(phone,"length",phone.length(),$("#phone").text()),
             if(phone.lenght>0)
             {
             $.ajax({
