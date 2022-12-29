@@ -169,7 +169,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 form-column">
                     <div class="form-inner">
                         <!-- <h3>Leave a Comment</h3> -->
-                        <form target="_self " id="contact-form" class="default-form">
+                        <form  id="submit-form" class="default-form">
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                     <input  type="text" name="name" placeholder="Your Name" required>
@@ -680,32 +680,22 @@
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
     <script>
-        $("#contact-form").submit((e) => {
-            console.log(e);
-            console.log($("#contact-form").serialize());
-            const name = (inputs.elements["name"].value).trim()
-            const email = (inputs.elements["email"].value).trim()
-            const address= (inputs.elements["address"].value.trim())
-            const phone = (inputs.elements["phone"].value).trim()
+        $("#submit-form").submit((e)=>{
             e.preventDefault()
-            if (!name.length > 0 || !email.length > 0 || !address.length > 0 || !phone.length > 0) {
-        alert("All fields are mandatory")
-        return;
-            }else{
-                $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbwWRonTS6uhd8DwPYXjLRjZNjVFbsLbtZf3JGBy6kumwxDFWnsYS0ovZ7hai2wLGIol/exec",
-                data: $("#contact-form").serialize(),
-                method: "post",
-                success: function (response) {
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwQa8s0j5gn5Lxsw04K_18zBwvoUWKzEamkv2itcXUwL4Rwn-FaEe8t46c814cniuoiKg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
                     alert("Form submitted successfully")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
-                error: function (err) {
+                error:function (err){
                     alert("Something Error")
+    
                 }
             })
-            }
         })
     </script>
 
