@@ -172,14 +172,14 @@
                         <form target="_self " id="contact-form" class="default-form">
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input id="name" type="text" name="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input type="email" name="email" placeholder="Email Address"
+                                    <input id="email" type="email" name="email" placeholder="Email Address"
                                         required>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 form-group">
-                                    <input type="text" name="phone" 
+                                    <input id="phone" type="text" name="phone" 
                                         placeholder="Phone Number" required>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12 form-group">
@@ -207,7 +207,7 @@
                                         <label for="css">Dime Klear Filter Water Bottle</label><br> -->
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                    <textarea name="address" placeholder="Address" required></textarea>
+                                    <textarea id="address" name="address" placeholder="Address" required></textarea>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
                                     <button class="theme-btn btn-one" type="submit" name="submit-form">Submit
@@ -683,6 +683,10 @@
         $("#contact-form").submit((e) => {
             console.log(e);
             e.preventDefault()
+            var phone=$("#phone").val();
+            console.log(phone,"length",phone.length())
+            if(phone.lenght>0)
+            {
             $.ajax({
                 url: "https://script.google.com/macros/s/AKfycbwWRonTS6uhd8DwPYXjLRjZNjVFbsLbtZf3JGBy6kumwxDFWnsYS0ovZ7hai2wLGIol/exec",
                 data: $("#contact-form").serialize(),
@@ -696,6 +700,10 @@
                     alert("Something Error")
                 }
             })
+            }
+            else{
+                alert("Blocked")
+            }
         })
     </script>
 
