@@ -223,8 +223,9 @@
         <!-- google-map-section -->
 
 
+
         <!-- main-footer -->
-       <footer class="main-footer">
+        <footer class="main-footer">
             <div class="pattern-layer">
                 <div class="pattern-1" style="background-image: url(assets/images/shape/shape-12.png);"></div>
                 <div class="pattern-2" style="background-image: url(assets/images/shape/shape-13.png);"></div>
@@ -234,7 +235,7 @@
                 <div class="footer-top clearfix">
                     <div class="line-shape" style="background-image: url(assets/images/shape/shape-11.png);"></div>
                     <div class="text pull-left">
-                        <h2> <span>Call Us</span> </h2>
+                        <h2><span>Call Us</span> </h2>
                     </div>
                     <div class="support-box pull-right">
                         <a href="tel:+919746951890"><i class="fas fa-phone"></i>+919746951890</a>
@@ -242,11 +243,11 @@
                 </div>
                 <div class="widget-section">
                     <div class="row clearfix">
+                        
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo11.png"
-                                            alt=""></a></figure>
-                                <!--                                 <div class="text">
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/logo11.png" alt=""></a></figure>
+<!--                                 <div class="text">
                                     <p></p>
                                 </div> -->
                             </div>
@@ -261,11 +262,8 @@
                                         <li><i class="fal fa-map-marker-alt"></i>Dime klear pvt ltd
                                             2(C), Science and technology entrepreneurship park
                                             National institute of technology Karnataka</li>
-                                        <li><i class="fal fa-phone"></i>Call Us: <a href="tel:+919746951890">+919746951890</a>
-                                        </li>
-                                        <li><i class="fal fa-envelope-open-text"></i><a
-                                                href="mailto:maildimeklearindia@gmail.com">maildimeklearindia@gmail.com</a>
-                                        </li>
+                                        <li><i class="fal fa-phone"></i>Call Us: <a href="tel:8088835842">+919746951890</a></li>
+                                        <li><i class="fal fa-envelope-open-text"></i><a href="mailto:maildimeklearindia@gmail.com">maildimeklearindia@gmail.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -280,7 +278,7 @@
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About us</a></li>
                                         <li><a href="service.html">Products</a></li>
-                                        <!--                                         <li><a href="prebooking.html">Blog</a></li> -->
+<!--                                         <li><a href="prebooking.html">Blog</a></li> -->
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
@@ -304,7 +302,7 @@
                                 </div>
                             </div>
                         </div> -->
-
+                        
                         <div class="widget-title">
                             <h4>Opening Hours</h4>
                             <ul class="list clearfix">
@@ -319,14 +317,12 @@
                 <div class="auto-container">
                     <div class="bottom-inner">
                         <div class="copyright">
-                            <p><a href="index.html"><a href="https://www.vectorcrop.com/">VectorCrop</a> &copy; 2021 All
-                                    Right Reserved</p>
+                            <p><a href="index.html"><a href="https://www.vectorcrop.com/">VectorCrop</a> &copy; 2021 All Right Reserved</p>
                         </div>
                         <ul class="social-links clearfix">
                             <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://instagram.com/dimeklearindia?igshid=YmMyMTA2M2Y="><i
-                                        class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://instagram.com/dimeklearindia?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a></li>
                             <li><a href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                         <ul class="footer-nav clearfix">
@@ -361,28 +357,8 @@
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
 
-
     <!-- main-js -->
     <script src="./assets/js/script.js"></script>
-    <script>
-        $("#contact-form").submit((e) => {
-            e.preventDefault()
-            $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbwWRonTS6uhd8DwPYXjLRjZNjVFbsLbtZf3JGBy6kumwxDFWnsYS0ovZ7hai2wLGIol/exec",
-                data: $("#contact-form").serialize(),
-                method: "post",
-                success: function (response) {
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error: function (err) {
-                    alert("Something Error")
-                }
-            })
-        })
-    </script>
 
 </body><!-- End of .page_wrapper -->
-
 </html>
